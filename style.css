@@ -1,0 +1,141 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #100d18;
+    color: white;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 35px 20px;
+    background: linear-gradient(90deg, #21102e, #721b72, #e34c91);
+}
+
+header h1 {
+    font-size: 38px;
+    letter-spacing: 3px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+main {
+    width: 90%;
+    max-width: 950px;
+    margin: 40px auto;
+}
+
+.apresentacao {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.apresentacao h2 {
+    color: #ff78bd;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.apresentacao p {
+    color: #d5cbdc;
+    line-height: 1.6;
+}
+
+.carrossel {
+    background: #20182b;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
+}
+
+.area-midia {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #08060c;
+}
+
+.area-midia img,
+.area-midia iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: none;
+}
+
+#video {
+    display: none;
+}
+
+.informacoes {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.informacoes h2 {
+    color: #ff78bd;
+    font-size: 23px;
+}
+
+.informacoes p {
+    color: #b9a9c5;
+    margin-top: 8px;
+}
+
+.controles {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+button {
+    background: linear-gradient(90deg, #a52b91, #e34c91);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: #ff78bd;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+    background: #1b1324;
+    color: #b9a9c5;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 25px;
+    }
+
+    .informacoes h2 {
+        font-size: 19px;
+    }
+
+    button {
+        width: 45%;
+    }
+}
